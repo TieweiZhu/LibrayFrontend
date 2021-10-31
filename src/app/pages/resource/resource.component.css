@@ -1,0 +1,282 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-decoration:none;
+}
+
+/*资源库页面*/
+
+/*筛选框位置的div*/
+.siftbox{
+	position:absolute;
+	top:80px;
+	width:1196px;
+	height:240px;
+	border:solid 2px rgb(125,125,125);
+}
+
+/*筛选框*/
+.sift{
+	position:absolute; 
+	top:15px; 
+	left:50px; 
+	height:30px; 
+	width:365px; 
+	border:solid 1px #333333; 
+	font-size:15px; 
+	text-indent:1em; 
+	line-height:30px;
+}
+
+/*筛选图片*/
+.siftphoto{
+	position:absolute;
+	left:417px;
+	top:15px;
+	width:45px;
+	height:32px;
+	border:solid 1px #333333;
+	border-left:none;
+	background-image:url(src/assets/img/sift.jpg);
+}
+
+/*三种条件的位置div*/
+.condition1{
+	position:absolute;
+	top:60px;
+	width:1196px;
+	height:60px;
+	border-top:solid 1px rgb(220,220,220);
+}
+
+.condition2{
+	position:absolute;
+	top:120px;
+	width:1196px;
+	height:60px;
+	border-top:solid 1px rgb(220,220,220);
+}
+
+.condition3{
+	position:absolute;
+	top:180px;
+	width:1196px;
+	height:60px;
+	border-top:solid 1px rgb(220,220,220);
+}
+
+/*条件名称*/
+.conditionname{
+	position:absolute;
+	width:100px;
+	height:60px;
+}
+
+.conditionname p{
+	position:absolute;
+	width:100px;
+	height:60px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	line-height:60px;
+	color:#333;
+}
+
+/*条件标签第一行*/
+.lable{
+	position:absolute;
+	left:100px;
+	width:520px;
+	height:60px;
+}
+
+.lable ul li{
+	position:relative;
+	width:100px;
+	height:60px;
+	display:inline-block;
+	line-height:60px;
+	text-align:center;
+	font-size:16px;
+	color:#333;
+}
+
+.lable ul li:hover{
+	color:#F00;
+}
+
+/*条件标签第二行*/
+.lable2{
+	position:absolute;
+	left:100px;
+	width:520px;
+	height:60px;
+}
+
+.lable2 ul li{
+	position:relative;
+	width:100px;
+	height:60px;
+	display:inline-block;
+	line-height:60px;
+	text-align:center;
+	font-size:16px;
+	color:#333;
+}
+
+.lable2 ul li:hover{
+	color:#F00;
+}
+
+/*条件标签第三行*/
+.lable3{
+	position:absolute;
+	left:100px;
+	width:1070px;
+	height:60px;
+}
+
+.lable3 ul li{
+	position:relative;
+	width:100px;
+	height:60px;
+	display:inline-block;
+	line-height:60px;
+	text-align:center;
+	font-size:16px;
+	color:#333;
+}
+
+.lable3 ul li:hover{
+	color:#F00;
+}
+
+/*筛选结果的位置div*/
+.resultbox{
+	position:absolute;
+	top: 350px;
+	left: -200px;
+	width:1600px;
+	height:680px;
+	border:solid 2px rgb(125,125,125);
+}
+
+/*排序顺序*/
+.listtop{
+	position:absolute;
+	width:1600px;
+	height:40px;
+	border-bottom:solid 1px rgb(125,125,125);
+}
+
+.timetop{
+	position:absolute;
+	width:185px;
+	height:40px;
+	border-right:solid 1px rgb(125,125,125);
+}
+
+.timetop p{
+	position:absolute;
+	width:185px;
+	height:40px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	line-height:40px;
+	color:#333;
+}
+
+.downloadtop{
+	position:absolute;
+	left:186px;
+	width:185px;
+	height:40px;
+	border-right:solid 1px rgb(125,125,125);
+}
+
+.downloadtop p{
+	position:absolute;
+	width:185px;
+	height:40px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	line-height:40px;
+	color:#333;
+}
+
+.paixu{
+	position:absolute;
+	left:165px;
+	top:9px;
+	height:22px;
+	width:16px;
+	background-image:url(src/assets/img/paixu.png);
+}
+
+.contents{
+	position:absolute;
+	top: 40px;
+	width: 1600px;
+	height: 40px;
+	border-bottom: solid 1px rgb(125,125,125) ;
+}
+
+.contents p{
+	text-align: center;
+	line-height:40px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.name{
+	position: absolute;
+	height: 40px;
+	width: 400px;
+}
+
+.introduction{
+	position: absolute;
+	left: 400px;
+	height: 40px;
+	width: 600px;
+}
+
+.category{
+	position: absolute;
+	left: 1000px;
+	height: 40px;
+	width: 200px;
+}
+
+.type{
+	position: absolute;
+	left: 1200px;
+	height: 40px;
+	width: 200px;
+}
+
+.operate{
+	position: absolute;
+	left: 1400px;
+	height: 40px;
+	width: 200px;
+}
+
+
+/*结果显示*/
+.result{
+	position:absolute;
+	top:81px;
+	width:1600px;
+	height:635px;
+}
+
+.result table td{
+	height: 45px;
+	line-height: 45px;
+	border-bottom: solid 1px rgb(125,125,125);
+}

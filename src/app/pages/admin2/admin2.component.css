@@ -1,0 +1,163 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-decoration:none;
+}
+
+.listbox{
+	position:absolute;
+	top:90px;
+	width:350px;
+	height:310px;
+	border:solid 2px rgb(125,125,125);
+}
+
+.list1{
+	position:absolute;
+	width:350px;
+	height:150px;
+	border-bottom:solid 1px rgb(46, 45, 45);
+}
+
+.list2{
+	position:absolute;
+	top:152px;
+	width:350px;
+	height:150px;
+}
+
+.listbox p{
+	position:absolute;
+	width:350px;
+	height:100px;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:100px;
+	color:#333;
+}
+
+.listbox p:hover{
+	background:#FFF;
+	color:#F00;
+}
+	
+
+.psearchbox{
+	position:absolute;
+	top:90px;
+	left:370px;
+	width:826px;
+	height:310px;
+	border:solid 2px rgb(125,125,125);
+}
+
+/*搜索条件的资源名称*/
+.pname{
+	position:absolute;
+	top:80px;
+	left:50px;
+	width:100px;
+	height:35px;
+}
+
+.pname p{
+	position:absolute;
+	width:100px;
+	height:35px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	line-height:35px;
+	color:#333;
+}
+/*搜索条件的资源名称搜索框*/
+.pnamebox{
+	position:absolute; 
+	top:80px; 
+	left:160px; 
+	height:35px; 
+	width:200px; 
+	border:solid 1px #000000; 
+	font-size:14px; 
+	text-indent:1em; 
+	line-height:35px;
+}
+
+/*资源类别*/
+.pclass{
+	position:absolute;
+	top:80px;
+	left:450px;
+	width:100px;
+	height:35px;
+}
+
+.pclass p{
+	position:absolute;
+	width:100px;
+	height:35px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	line-height:35px;
+	color:#333;
+}
+
+.pclassbox{
+	position:absolute; 
+	top:80px; 
+	left:560px; 
+	height:35px; 
+	width:200px; 
+	border:solid 1px #000000; 
+	font-size:14px; 
+	text-indent:1em; 
+	line-height:35px;
+}
+
+
+/*个人搜索按钮*/
+.psearch{
+	position:absolute;
+	top:230px;
+	left:300px;
+	width:100px;
+	height:35px;
+}
+
+.presult{
+	position:absolute;
+	top:460px;
+	width:1196px;
+	height:510px;
+	border:solid 2px rgb(125,125,125);
+}
+
+.dataintroduction{
+	position:absolute;
+	width:1196px;
+	height:60px;
+	border-bottom:solid 1px rgb(200,200,200);
+}
+
+.dataintroduction ul li{
+	position:relative;
+	width:298px;
+	height:60px;
+	display:inline-block;
+	line-height:60px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:#575757;
+}
+
+.data{
+	position:absolute;
+	top:61px;
+	width:1196px;
+	height:50px;
+	border-bottom:solid 1px rgb(200,200,200);
+}

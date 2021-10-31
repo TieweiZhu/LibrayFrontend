@@ -1,0 +1,50 @@
+<div class="listbox">
+    <div class="list1">
+      <button (click)="getJump()" style="position: absolute;height:100px;width:350px;border:none;">My resources</button>
+    </div>
+    <div class="list2">
+      <button (click)="getJump2()" style="position: absolute;height:100px;width:350px;border:none;">My collection</button>
+    </div>
+    <div class="list3">
+      <button (click)="getJump3()" style="position: absolute;height:105px;width:350px;border:none;">Account management</button>
+    </div>
+ </div>
+ 
+ <div class="psearchbox">
+   <div class="pname">
+      <p>Book Name :</p>
+   </div>
+   <input class="pnamebox" type="text" placeholder="War and Peace" />
+   <div class="psearch">
+   <input type="button" value="Search" (click)="search()" style="width:90px; height: 35px;">
+   </div>
+</div>
+
+<div class="resultbox">
+   <div class="contents">
+       <div class="name">
+        <p>Book Name</p>
+       </div>
+       <div class="introduction">
+          <p>Introduction</p>
+       </div>
+       <div class="category">
+          <p>Category</p>
+       </div>
+       <div class="type">
+          <p>Type</p>
+       </div>
+       <div class="operate"></div>
+     </div>
+    <div class="result">
+     <table *ngFor="let item of booklist.slice(0,14);">
+       <td style="display: none;">{{item.bookID}}</td>
+       <td style="width: 400px;">{{item.name}}</td>
+       <td style="width: 600px;">{{item.introduction}}</td>
+       <td style="width: 200px; text-align: center;">{{item.category}}</td>
+       <td style="width: 200px; text-align: center;">{{item.type}}</td>
+       <td style="width: 200px;">
+          <button (click)="delete(item.bookID)" style="position:absolute;width:75px;height:30px; left:1500px;">Delete</button>
+       </td>
+    </table>
+ </div>

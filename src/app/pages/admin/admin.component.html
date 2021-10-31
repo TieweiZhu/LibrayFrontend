@@ -1,0 +1,93 @@
+<div class="listbox">
+    <div class="list1">
+      <button (click)="getJump()" style="position: absolute;height:150px;width:350px;border:none;">Resources</button>
+   </div>
+   <div class="list2">
+      <button (click)="getJump2()" style="position: absolute;height:156px;width:350px;border:none;">User</button>
+    </div>
+  </div>
+  
+  <div class="psearchbox">
+    <div class="pname">
+       <p>Book Name :</p>
+    </div>
+    <input [(ngModel)]="key" class="pnamebox" type="text" placeholder="War and Peace" />
+    <div class="psearch">
+     <input (click)="search()" type="button" value="Search" style="width:90px; height: 35px;">
+    </div>
+    <div class="pupload">
+        <input type="button" value="Upload" (click)="upload()" style="width:90px; height: 35px;">
+    </div>
+</div>
+
+<div id="uploadbox" class="uploadbox" [style.display]="isVisible5 ? 'block':'none'">
+    <div class="tablebox">
+    <table>
+      <tr>
+        <td style="position:absolute;height:60px;top:20px;left:80px;">Name：
+         <input type="text" [(ngModel)]="name" name="name" style="width:150px; height:25px;"><br></td>
+      </tr>
+      <tr>     
+        <td style="position:absolute;height:60px;top:75px;left:30px;">Introduction：
+         <input type="text" [(ngModel)]="introduction" name="introduction" style="width:150px; height:25px;" ><br></td>
+      </tr>
+      <tr>
+       <td style="position:absolute;height:60px;top:135px;left:55px;">Category： 
+         <select id="Category" [(ngModel)]="category" name="Category" class="upCategory" style="width:155px;height:28px;">
+             <option value="video">Video</option>
+             <option value="documentation">Documentation</option>
+             <option value="picture">Picture</option>
+       </select><br></td>
+    </tr>
+    <tr>
+       <td style="position:absolute;height:60px;top:190px;left:85px;">Type： 
+         <select id="Type" [(ngModel)]="type" name="Type" class="upType" style="width:155px;height:28px;">
+             <option value="educational">Educational</option>
+             <option value="learining">Learining</option>
+             <option value="comprehensive">Comprehensive</option>
+       </select> <br></td>
+    </tr>
+    <tr>
+    <td style="position:absolute;height:60px;top:245px;left:50px;">Select file：
+      <input id="uploadfile" (change)="changed($event)" type="file" name="uploadfile" style="width:155px; height:25px;">
+      <br></td>
+    </tr>
+         <td style="height:50px;">
+           <button (click)="getUpload()" style="position:absolute;width:80px;height:30px;top:300px;left:85px;">Upload</button>
+           <button (click)="return()" style="position:absolute;width:80px;height:30px;top:300px;left:180px;">Return</button>
+         </td>     
+    </table>    
+    </div>
+ </div>
+<div class="resultbox">
+  <div class="contents">
+      <div class="name">
+       <p>Book Name</p>
+      </div>
+      <div class="introduction">
+         <p>Introduction</p>
+      </div>
+      <div class="category">
+         <p>Category</p>
+      </div>
+      <div class="type">
+         <p>Type</p>
+      </div>
+      <div class="count">
+        <p>Count</p>
+      </div>
+      <div class="operate"></div>
+    </div>
+   <div class="result">
+    <table *ngFor="let item of booklist.slice(0,14);">   
+      <td style="display: none;">{{item.bookID}}</td>
+      <td style="width: 400px;">{{item.name}}</td>
+      <td style="width: 600px;">{{item.introduction}}</td>
+      <td style="width: 200px; text-align: center;">{{item.category}}</td>
+      <td style="width: 200px; text-align: center;">{{item.type}}</td>
+      <td style="width: 100px; text-align: center;">{{item.count}}</td>
+      <td style="width: 100px;">
+         <button (click)="delete(item.bookID)" style="position:absolute;width:75px; height:30px; left:1510px;">Delete</button>
+      </td>
+   </table>
+</div>

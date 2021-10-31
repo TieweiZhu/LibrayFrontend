@@ -1,0 +1,137 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-decoration:none;
+}
+/*个人中心页面*/
+/*我的收藏，资源库等位置的div*/
+.listbox{
+	position:absolute;
+	top:90px;
+	width:350px;
+	height:310px;
+	border:solid 2px rgb(125,125,125);
+}
+
+.list1{
+	position:absolute;
+	width:350px;
+	height:100px;
+	border-bottom:solid 1px rgb(46, 45, 45);
+}
+
+.list2{
+	position:absolute;
+	top:102px;
+	width:350px;
+	height:100px;
+	border-bottom:solid 1px rgb(46, 45, 45);
+}
+
+.list3{
+	position:absolute;
+	top:204px;
+	width:350px;
+	height:100px;
+}
+
+.listbox p{
+	position:absolute;
+	width:350px;
+	height:100px;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:100px;
+	color:#333;
+}
+
+.listbox p:hover{
+	background:#FFF;
+	color:#F00;
+}
+	
+
+/*个人中心搜索功能位置div*/
+.psearchbox{
+	position:absolute;
+	top:90px;
+	left:370px;
+	width:826px;
+	height:310px;
+	border:solid 2px rgb(125,125,125);
+}
+
+/*搜索条件的资源名称*/
+.old{
+	position:absolute;
+	top:65px;
+	left:160px;
+	width:200px;
+	height:35px;
+}
+
+.old p{
+	position:absolute;
+	width:200px;
+	height:35px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	line-height:35px;
+	color:#333;
+}
+/*搜索条件的资源名称搜索框*/
+.oldbox{
+	position:absolute; 
+	top:65px; 
+	left:340px; 
+	height:35px; 
+	width:200px; 
+	border:solid 1px #000000; 
+	font-size:14px; 
+	text-indent:1em; 
+	line-height:35px;
+}
+
+/*资源类别*/
+.new{
+	position:absolute;
+	top:130px;
+	left:160px;
+	width:200px;
+	height:35px;
+}
+
+.new p{
+	position:absolute;
+	width:200px;
+	height:35px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	line-height:35px;
+	color:#333;
+}
+
+.newbox{
+	position:absolute; 
+	top:130px; 
+	left:340px; 
+	height:35px; 
+	width:200px; 
+	border:solid 1px #000000; 
+	font-size:14px; 
+	text-indent:1em; 
+	line-height:35px;
+}
+
+/*个人搜索按钮*/
+.psearch{
+	position:absolute;
+	top:230px;
+	left:360px;
+	width:100px;
+	height:35px;
+}

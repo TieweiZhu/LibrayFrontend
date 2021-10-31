@@ -1,0 +1,368 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-decoration:none;
+	}
+
+.box{
+	position:absolute;
+	width:1200px;
+	height:380px;
+	top: 75px;
+}
+/*分类表的位置div*/
+.table{
+	position:absolute;
+	width:300px;
+	height:350px;
+	background:rgb(255,255,255);
+}
+/*三个小分类表*/
+.class{
+	position:absolute;
+	width:300px;
+	height:116px;
+    border:solid 2px rgb(125,125,125);
+	border-bottom: none;
+}
+
+.class2{
+	position:absolute;
+	top:118px;
+	width:300px;
+	height:116px;
+	border:solid 2px rgb(125,125,125);
+	border-bottom: none;
+}
+
+.class3{
+	position:absolute;
+	top:236px;
+	width:300px;
+	height:116px;
+	border:solid 2px rgb(125,125,125);
+}
+/*分类表的分类名称*/
+.classtext{
+	position:absolute;
+	width:300px;
+	height:52px;
+}
+
+.classtext p{
+	position:absolute;
+	left: 20px;
+	width:200px;
+	height:50px;
+	font-size:16px;
+	font-weight:bold;
+	line-height:50px;
+	color:#575757;
+}
+/*分类表中的详细类别*/
+.classwords{
+	position:absolute;
+	width:300px;
+	height:32px;
+	top:50px;
+}
+/*分类表第一行*/
+.classwords ul{
+	word-spacing:0px;
+	font-size:0px;
+}
+
+.classwords ul li{
+	position:relative;
+	width:100px;
+	height:32px;
+	display:inline-block;
+	line-height:32px;
+	text-align:center;
+	font-size:13px;
+	color:#666;
+}
+/*分类表第二行*/
+.classwords2{
+	position:absolute;
+	width:300px;
+	height:32px;
+	top:82px;
+}
+
+.classwords2 ul{
+	word-spacing:0px;
+	font-size:0px;
+}
+
+.classwords2 ul li{
+	position:relative;
+	width:100px;
+	height:32px;
+	display:inline-block;
+	line-height:32px;
+	text-align:center;
+	font-size:13px;
+	color:#666;
+}
+
+/*分类表的小箭头图标*/
+.spot{
+	position:absolute;
+	top:15px;
+	left:290px;
+	width:10px;
+	height:15px;
+	background:url(src/assets/img/sprite.png) no-repeat 0px -173px;
+}
+
+
+/*侧拉框功能*/
+.xlk{
+	position:absolute;
+	top:-2px;
+	left:300px;
+	border:solid 2px rgb(125,125,125);
+	border-left:none;
+	height:116px;
+	width:0px;
+	z-index:1;
+	overflow:hidden;
+	background:rgb(255,255,255);
+}
+
+.class:hover .xlk{
+	width:300px;
+}
+
+.class2:hover .xlk{
+	width:300px;
+}
+
+.class3:hover .xlk{
+	width:300px;
+}
+
+.classwords ul li:hover{
+	color:#F00;
+}
+
+.classwords2 ul li:hover{
+	color:#F00;
+}
+
+/*轮播图*/
+.frame{
+	position:absolute;
+	left:318px;
+	width:878px;
+	height:348px;
+	overflow:hidden;
+	border:solid 2px rgb(235,230,225);
+}
+
+#photo{
+	position:absolute;
+	width:2634px;
+	height:350px;
+}
+
+.play{
+	animation:hh 10s linear infinite;
+}
+
+@keyframes hh{
+	0%,28%{left:0px;}
+	34%,62%{left:-878px;}
+	68%,100%{left:-1756px;}
+}
+
+/*排行榜部分位置*/
+.central{
+	position:absolute;
+	top:520px;
+	width:1200px;
+	height:520px;
+}
+
+/*排行榜标题*/
+.title{
+	position: absolute;
+	width: 500px;
+	height: 50px;
+}
+
+.title p{
+	position:absolute;
+	width:500px;
+	height:50px;
+	font-size:24px;
+	font-weight:bold;
+	line-height:50px;
+	color:#575757;
+}
+
+/*左边表格*/
+.left{
+	position:absolute;
+	top: 60px;
+	width:600px;
+	height:375px;
+}
+
+.newtable{
+	position:absolute;
+	width:590px;
+	height:375px;
+	border:solid 2px rgb(125,125,125);
+}
+
+
+/*右边表格*/
+.right{
+	position:absolute;
+	top:60px;
+    left:596px;
+	width:590px;
+	height:375px;
+}
+
+.toptable{
+	position:absolute;
+	left:10px;
+	width:590px;
+	height:375px;
+	border:solid 2px rgb(125,125,125);
+}
+
+/*两个资源表名称*/
+.name{
+	position:absolute;
+	width:590px;
+	height:60px;
+	border-bottom:solid 1px rgb(125,125,125);
+	background:rgb(237,237,237);
+}
+
+.name p{
+	position:absolute;
+	left:10px;
+	width:200px;
+	height:60px;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:60px;
+	color:#575757;
+}
+
+
+/*new小图标*/
+.newphoto{
+	position:absolute;
+	left:195px;
+	height:40px;
+	width:40px;
+	background-image:url(src/assets/img/new.png);
+}
+
+/*top小图标*/
+.topphoto{
+	position:absolute;
+	left:205px;
+	height:40px;
+	width:40px;
+	background-image:url(src/assets/img/top.png);
+}
+
+
+/*资源的2个介绍*/
+.introduction{
+	position:absolute;
+	top:61px;
+	width:590px;
+	height:55px;
+	background:rgb(245,245,245);
+	border-bottom:solid 1px rgb(125,125,125);
+}
+
+.introduction ul{
+	word-spacing:0px;
+	font-size:0px;
+}
+
+.introduction ul li{
+    position:relative;
+	left: 45px;
+	width:255px;
+	height:55px;
+	display:inline-block;
+	line-height:55px;
+	text-align:center;
+	font-size:18px;
+	color:#575757;
+	padding:0 10px;
+}
+
+
+
+/*排行榜数字*/
+.number1{
+	position:absolute;
+	top:129px;
+	left:10px;
+	width:25px;
+	height:25px;
+	background-image:url(src/assets/img/1.png);
+}
+
+.number2{
+	position:absolute;
+	top:178px;
+	left:10px;
+	width:25px;
+	height:25px;
+	background-image:url(src/assets/img/2.png);
+}
+
+.number3{
+	position:absolute;
+	top:227px;
+	left:10px;
+	width:25px;
+	height:25px;
+	background-image:url(src/assets/img/3.png);
+}
+
+.number4{
+	position:absolute;
+	top:276px;
+	left:10px;
+	width:25px;
+	height:25px;
+	background-image:url(src/assets/img/4.png);
+}
+
+.number5{
+	position:absolute;
+	top:325px;
+	left:10px;
+	width:25px;
+	height:25px;
+	background-image:url(src/assets/img/5.png);
+}
+
+.result{
+	position:absolute;
+	top:116px;
+	left:45px;
+	width:545px;
+	height:260px;
+}
+
+.result table td{
+	height: 46px;
+	line-height: 46px;
+	border-bottom: solid 1px rgb(125,125,125);
+}

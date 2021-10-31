@@ -1,0 +1,178 @@
+<div class="box">
+<div class="table">
+    <div class="class">
+        <div class="classtext">
+           <p>Subject Books</p>
+       </div>
+       <div class="spot"></div>
+       <div class="classwords">
+          <ul>
+             <li>Art</li>
+             <li>History</li>
+             <li>Medicine</li>
+          </ul>
+       </div>
+       <div class="classwords2">
+          <ul>
+             <li>Law</li>
+             <li>Science</li>
+             <li>Education</li>
+          </ul>
+       </div>
+       <div class="xlk">
+          <div class="classwords">
+          <ul>
+             <li>Economics</li>
+             <li>Literature</li>
+             <li>Engineering</li>
+          </ul>
+       </div>
+       <div class="classwords2">
+          <ul>
+             <li>Agronomy</li>
+             <li>Philosophy</li>
+             <li>Management</li>
+          </ul>
+       </div>
+       </div>
+     </div>
+     
+     <div class="class2">
+        <div class="classtext">
+           <p>Comprehensive books</p>
+       </div>
+       <div class="spot"></div>
+       <div class="classwords">
+          <ul>
+             <li>Novel</li>
+             <li>Poetry</li>
+             <li>Newspaper</li>
+          </ul>
+       </div>
+       <div class="classwords2">
+          <ul>
+             <li>Prose</li>
+             <li>Magazine</li>
+             <li>Masterpiece</li>
+          </ul>
+       </div>
+       <div class="xlk">
+          <div class="classwords">
+          <ul>
+             <li>Encyclopedia</li>
+             <li>Story book</li>
+             <li>History book</li>
+          </ul>
+       </div>
+       <div class="classwords2">
+          <ul>
+             <li>Art books</li>
+             <li>Comic book</li>
+             <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          </ul>
+       </div>
+       </div>
+     </div>
+     <div class="class3">
+        <div class="classtext">
+           <p>Video resources</p>
+       </div>
+       <div class="spot"></div>
+       <div class="classwords">
+          <ul>
+             <li>News video</li>
+             <li>Teaching video</li>
+             <li>Plant video</li>
+          </ul>
+       </div>
+       <div class="classwords2">
+          <ul>
+             <li>Micro video</li>
+             <li>Expert lecture</li>
+             <li>Landscape</li>
+          </ul>
+       </div>
+       <div class="xlk">
+          <div class="classwords">
+          <ul>
+             <li>Animal video</li>
+             <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+             <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          </ul>
+       </div>
+       <div class="classwords2">
+          <ul>
+             <li>Classic movie</li>
+             <li>&nbsp;&nbsp;&nbsp;</li>
+             <li>&nbsp;&nbsp;&nbsp;</li>
+          </ul>
+       </div>
+       </div>
+     </div>
+  </div>
+  
+  <div class="frame">
+    <div id="photo" class="play">
+      <img src="assets/img/photo.jpg" width="878" height="348">
+      <img src="assets/img/photo2.png" width="878" height="348">
+      <img src="assets/img/photo3.jpg" width="878" height="348">
+   </div>
+  </div>
+
+</div>
+
+  <div class="central">
+     <div class="title">
+        <p>Resource Ranking</p>
+     </div>
+     <div class="left">
+      <div class="newtable">
+         <div class="name">
+            <p>Latest Resources</p>
+            <div class="newphoto"></div>
+         </div>
+         <div class="introduction">
+            <ul>
+               <li>Book Name</li>
+               <li>Upload Time</li>
+            </ul>
+         </div>
+            <div class="number1"></div>
+            <div class="number2"></div>
+            <div class="number3"></div>
+            <div class="number4"></div>
+            <div class="number5"></div>
+            <div class="result">
+               <table *ngFor="let item of booklist.slice(0,5);">
+                  <td style="width: 400px;">{{item.name}}</td>
+                  <td style="width: 200px;">{{convertDate(item.time)}}</td>
+               </table>
+            </div>
+      </div>
+   </div>
+   <div class="right">
+      <div class="toptable">
+         <div class="name">
+            <p>Download Ranking</p>
+            <div class="topphoto"></div>
+         </div>
+         <div class="introduction">
+            <ul>
+               <li>Book Name</li>
+               <li>Download Times</li>
+            </ul>
+         </div>
+            <div class="number1"></div>
+            <div class="number2"></div>
+            <div class="number3"></div>
+            <div class="number4"></div>
+            <div class="number5"></div>
+            <div class="result">
+               <table *ngFor="let item of countlist.slice(0,5);">
+                  <td style="width: 400px;">{{item.name}}</td>
+                  <td style="width: 200px;">{{item.count}}</td>
+               </table>
+            </div>
+      </div>
+      </div>
+   </div>

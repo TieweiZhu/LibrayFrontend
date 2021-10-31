@@ -1,0 +1,22 @@
+<div class="listbox">
+    <div class="list1">
+       <button (click)="getJump()" style="position: absolute;height:150px;width:350px;border:none;">Resources</button>
+    </div>
+    <div class="list2">
+       <button (click)="getJump2()" style="position: absolute;height:156px;width:350px;border:none;">User</button>
+    </div>
+  </div>
+  
+  <div id="Collection" class="psearchbox">
+    <div class="pname">
+       <p>Account</p>
+    </div>
+    <input  class="pnamebox" type="text" [(ngModel)]="account" placeholder="User's Account" />
+    <div class="pclass">
+       <p>Password</p>
+    </div>
+    <input  class="pclassbox" type="password" [(ngModel)]="password"/>
+    <div class="psearch">
+     <input (click)="getAChange()" type="button" value="Change" style="width:90px; height: 35px;">
+    </div>
+</div>

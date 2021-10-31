@@ -1,0 +1,207 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-decoration:none;
+	}
+
+/*网页主体*/
+.main{
+	position:relative;
+	width:1903px;
+	height:1215px;
+	background:rgb(255,255,255);
+}
+/*网页顶部*/
+.top{
+	position:absolute;
+	width:1903px;
+	height:100px;
+    background: rgb(245,245,245);
+}
+
+.logo{
+	position:absolute;
+	left:320px;
+	width:100px;
+	height:100px;
+	background-image:url(src/assets/img/logo.jpg);
+}
+
+.logotext{
+	position:absolute;
+	top:15px;
+	left:400px;
+	width:250px;
+	height:70px;
+}
+
+.logotextstyle1{
+	line-height:35px;
+	width:250px;
+	text-align:center;
+	color:rgb(1,82,95);
+	font-size:36px;
+	font-weight:bold;
+	letter-spacing:6px;
+}
+
+/*登录图标*/
+.loginphoto{
+	position:absolute;
+	width:60px;
+	height:60px;
+	top:20px;
+	right:400px;
+	background-image:url(src/assets/img/login.jpg);
+}
+
+.login{
+	position:absolute;
+	top:15px;
+	right:340px;
+	width:50px;
+	height:40px;
+}
+
+.loginbox{
+	position:absolute;
+	top:200px;
+	left:800px;
+	width:350px;
+	height:350px;
+	background-image:url(src/assets/img/6.jpg);
+	border:2px solid #000;
+	display:none;
+	z-index:2;
+}
+
+.registerbox{
+	position:absolute;
+	top:200px;
+	left:800px;
+	width:350px;
+	height:350px;
+	background-image:url(src/assets/img/6.jpg);
+	border:2px solid #000;
+	display:none;
+	z-index:2;
+}
+
+.adminbox{
+	position:absolute;
+	top:200px;
+	left:800px;
+	width:350px;
+	height:350px;
+	background-image:url(src/assets/img/6.jpg);
+	border:2px solid #000;
+	display:none;
+	z-index:2;
+}
+
+/*网页的中间部分*/
+.middle{
+    position: absolute;
+    top: 100px;
+	left: 331px;
+	width:1200px;
+    height: 1000px;
+    background-color: rgb(255,255,255);
+}
+/*导航栏，轮播图和分类框位置*/
+.box{
+	position:absolute;
+	width:1200px;
+	height:420px;
+	top:100px;
+}
+
+/*导航栏*/
+.nav{
+	position:absolute;
+	width:1200px;
+	height:50px;
+}
+
+.nav ul{
+	word-spacing:0px;
+	font-size:0px;
+	display: inline-flex;
+}
+
+.nav ul li{
+	position:relative;
+	width:140px;
+	height:50px;
+	display:inline-block;
+	line-height:50px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#575757;
+	border-bottom:solid 2px #000;
+	padding:0 10px;
+}
+
+.nav ul li:hover{
+	background:#FFF;
+	color:#F90;
+	border-bottom:solid 2px #F60;
+}
+
+.pattern{
+	width: 150px;
+	height: 48px;
+	border: none;
+	background-color: #FFF;
+	font-size:16px;
+	font-weight:bold;
+	color:#575757;
+}
+
+.pattern:hover{
+	background:#FFF;
+	color:#F90;
+	border-top: solid 2px #F60;
+	border-left: solid 2px #F60;
+	border-right: solid 2px #F60;
+}
+
+/*页面底部*/
+.bottom{
+	position:absolute;
+	bottom: 0px;
+	width:1903px;
+	height:60px;
+	background:rgb(245,245,245);
+}
+
+.bottomtext{
+	position:absolute;
+	top:15px;
+	left:600px;
+	width:600px;
+	height:40px;
+}
+
+.bottomtext ul{
+	word-spacing:0px;
+	font-size:0px;
+}
+
+.bottomtext ul li{
+	position:relative;
+	width:120px;
+	height:40px;
+	display:inline-block;
+	line-height:40px;
+	text-align:center;
+	font-size:16px;
+	color:rgb(179,179,179);
+}
+
+.bottom ul li:hover{
+	background:#FFF;
+	color:black;
+}

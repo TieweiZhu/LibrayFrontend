@@ -1,0 +1,90 @@
+<div class="siftbox">
+    <input [(ngModel)]="key" class="sift" type="text" placeholder="Arabian Nights" />
+    <button (click)="search() " class="siftphoto"></button>
+    <div class="condition1">
+       <div class="conditionname">
+          <p>Category</p>
+       </div>
+       <div class="lable">
+           <ul>
+              <li>All</li>
+              <li>Video</li>
+              <li>Picture</li>
+              <li>Documentation</li>
+           </ul>
+       </div>
+    </div>
+    <div class="condition2">
+       <div class="conditionname">
+          <p>Type</p>
+       </div>
+       <div class="lable2">
+           <ul>
+              <li>All</li>
+              <li>Learning</li>
+              <li style="width: 110px;">Educational</li>
+              <li style="width: 150px;">Comprehensive</li>
+           </ul>
+       </div>
+    </div>
+    <div class="condition3">
+       <div class="conditionname">
+          <p>Time</p>
+       </div>
+       <div class="lable3">
+           <ul>
+              <li>All</li>
+              <li>2021</li>
+              <li>2020</li>
+              <li>2019</li>
+              <li>2018</li>
+              <li>2017</li>
+              <li>2016</li>
+              <li>2015</li>
+              <li>2014</li>
+              <li>2013</li>
+           </ul>
+       </div>
+    </div>
+</div>
+<div class="resultbox">
+  <div class="listtop">
+     <div class="timetop">
+        <p>Latest Release</p>
+        <div class="paixu"></div>
+     </div>
+     <div class="downloadtop">
+        <p>Download Times</p>
+        <div class="paixu"></div>
+     </div>
+  </div>
+  <div class="contents">
+     <div class="name">
+      <p>Name</p>
+     </div>
+     <div class="introduction">
+        <p>Introduction</p>
+     </div>
+     <div class="category">
+        <p>Category</p>
+     </div>
+     <div class="type">
+        <p>Type</p>
+     </div>
+     <div class="operate"></div>
+  </div>
+  <div class="result">
+     <table *ngFor="let item of booklist.slice(0,12);">
+        <td style="display: none;">{{item.bookID}}</td>
+        <td style="width: 400px;">{{item.name}}</td>
+        <td style="width: 600px;">{{item.introduction}}</td>
+        <td style="width: 200px; text-align: center;">{{item.category}}</td>
+        <td style="width: 200px; text-align: center;">{{item.type}}</td>
+        <td style="display: none;">{{item.url}}</td>
+        <td style="width: 200px;">
+           <button (click)="download(item.bookID)" style="position:absolute;width:75px; height: 35px; left:1400px;">Download</button>
+           <button (click)="collect(item.bookID,item.name,item.introduction,item.category,item.type)" style="position:absolute;width:75px; height: 35px; left:1500px;">Collect</button>
+        </td>
+     </table>
+  </div>
+</div>
